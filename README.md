@@ -6,7 +6,7 @@
 - [Overview](#overview)
 - [Data Summary and Understanding](#data-summary-and-understanding)
 - [Relational Model View](#relational-model-view)
-- 
+- [Building Metrics using DAX](#building-metrics-using-dax)
 
 ## Overview
 Goodcabs, a cab service company established two years ago, has gained a strong foothold in the Indian market by focusing on tier-2 cities. Unlike other cab service providers, Goodcabs is committed to supporting local drivers, helping them make a sustainable living in their hometowns while ensuring excellent service to passengers. With operations in ten tier-2 cities across India, Goodcabs has set ambitious performance targets for 2024 to drive growth and improve passenger satisfaction. 
@@ -21,6 +21,8 @@ However, the Chief of Operations, Bruce Haryali, wanted this immediately but the
 
 ## Relational Model View
 ![image](https://github.com/user-attachments/assets/188c1d23-9774-43e0-a2c8-2a64048f8a4c)
+
+## Building Metrics using DAX
 
 
 
