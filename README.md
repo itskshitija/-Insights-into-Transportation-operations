@@ -24,5 +24,87 @@ However, the Chief of Operations, Bruce Haryali, wanted this immediately but the
 
 ## Building Metrics using DAX
 
+<b>1.Total Trips</b>
+```
+Total Trips = CALCULATE(COUNT(fact_trips[trip_id]))
+```
 
+<b>2.Total Fare (Revenue)</b> 
+```
+Total Revenue = CALCULATE(SUM(fact_trips[fare_amount]))
+```
 
+<b>3.Total Distance Travelled</b>
+```
+Total Distance Travelled = CALCULATE(SUM(fact_trips[distance_travelled(km)]))
+```
+
+<b>4.Average Passenger Rating</b>
+```
+Average Passenger Rating = AVERAGE(fact_trips[passenger_rating])
+```
+
+<b>5.Average Driver Rating</b>
+```
+Average Driver Rating = AVERAGE(fact_trips[driver_rating])
+```
+
+<b>6.Average Fare Per Trip</b>
+```
+Average Fare per Trip = AVERAGE(fact_trips[fare_amount])
+```
+
+<b>7.Average Fare per km</b>
+```
+Average Fare Per km = DIVIDE(SUM(fact_trips[fare_amount]),SUM(fact_trips[distance_travelled(km)]),0)
+```
+
+<b>8.Average Trip Distance</b>
+```
+Average Trip Distance = CALCULATE(AVERAGE(fact_trips[distance_travelled(km)]))
+```
+
+<b>9.Min Trip Distance</b>
+```
+Min Trip Distance = CALCULATE(MIN(fact_trips[distance_travelled(km)]))
+```
+
+<b>10. Maximum Trip Distance</b>
+```
+Max Trip Distance = CALCULATE(MAX(fact_trips[distance_travelled(km)]))
+```
+
+<b>11.New Passengers</b>
+```
+New Passengers = CALCULATE(SUM(fact_passenger_summary[new_passengers]))
+```
+
+<b>12.Total Passengers</b>
+```
+Total Passengers = CALCULATE(SUM(fact_passenger_summary[total_passengers]))
+```
+
+<b>13.Repeated Passengers</b>
+```
+Repeated Passengers = CALCULATE(SUM(fact_passenger_summary[repeat_passengers]))
+```
+
+<b>14. Repeat Passenger Rate (RPR%)</b>
+```
+RPR% = DIVIDE([Repeated Passengers],[Total Passengers])
+```
+
+<b>15.Trips Target Achievement Rate(TTAR%)</b>
+```
+TTAR% = DIVIDE([Total Trips],SUM(monthly_target_trips[total_target_trips]),0)
+```
+
+<b>16.New Passenger Target Achievement Rate(NPTAR%)</b>
+```
+NPTAR% = DIVIDE([New Passengers],SUM(monthly_target_new_passengers[target_new_passengers]),0)
+```
+
+<b>17.Average Passenger Rating Target Achievement Rate (APRTAR%)</b>
+```
+APRTAR% = DIVIDE([Average Passenger Rating],AVERAGE(city_target_passenger_rating[target_avg_passenger_rating]),0)
+```
