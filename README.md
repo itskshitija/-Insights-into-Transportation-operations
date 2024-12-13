@@ -16,6 +16,7 @@ As part of this initiative, the Goodcabs management team aims to assess the comp
 However, the Chief of Operations, Bruce Haryali, wanted this immediately but the analytics manager Tony is engaged on another critical project. Tony decided to give this work to Peter Pandey who is the curious data analyst of Goodcabs. Since these insights will be directly reported to the Chief of Operations, Tony also provided some notes to Peter to support his work. 
 
 ## Data Summary and Understanding
+[Find Attached File Here](https://github.com/itskshitija/Insights-into-Transportation-operations/blob/main/meta_data.txt)
 
 
 ## Relational Model View
